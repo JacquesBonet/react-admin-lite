@@ -5,6 +5,10 @@ Little react/redux project to show crud behavior
 
 `npm install`
 
+# test
+
+̀ npm run test`
+
 
 # run
 

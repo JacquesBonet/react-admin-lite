@@ -1,5 +1,5 @@
 import users from "./users";
-import {actions} from "redux-easy2-crud";
+import {createSuccess} from "../actions/docs";
 import USERS from "../constants/users";
 
 describe('reducer', function () {
@@ -11,19 +11,19 @@ describe('reducer', function () {
     });
 
     it('should have an empty users array', function () {
-      expect(initialState).toEqual([]);
+      expect(initialState).toEqual({"isLoading": false, "payload": []});
     });
   });
 
   describe('ADD_USERS_SUCCESS', function () {
-    var state = [];
+    var state = {"isLoading": false, "payload": []};
     const user = {path: USERS, nom: "Bonet", prenom: "Jacques"};
 
     beforeEach(function () {
     });
 
     it('adds the user code to the array', function () {
-      const action = actions.createSuccess(user);
+      const action = createSuccess( USERS, user);
       state = users(state, action);
       expect(state[0]).toMatchSnapshot();;
     });
