@@ -1,0 +1,1 @@
+exports[`reducer ADD_PRODUCT_SUCCESS adds the product code to the array 1`] = `"AP1"`;

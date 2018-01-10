@@ -1,0 +1,68 @@
+.list ul {
+  padding-left: 0;
+}
+
+.list ul > li {
+  font-size: 1.5em;
+  list-style: none;
+  padding: 0.2em;
+}
+
+.item {
+  padding: 10px;
+  height: 26px;
+  position: relative;
+  border-bottom: 1px solid #CCC;
+}
+
+.item__free {
+  padding: 10px;
+  height: 26px;
+  position: relative;
+}
+
+
+.item__name {
+  width: 140px;
+  text-align: left;
+  float: left;
+  margin-left: 43%;
+}
+
+.item__prenom {
+  width: 100px;
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+}
+
+.item__button {
+  margin-left: 20px;
+  float: left;
+  top: 6px;
+  left: 30px;
+  display: none;
+}
+.item:hover button {
+  display: inline;
+}
+
+form.add {
+  width: 100%;
+  display: flex; }
+
+form.add > :first-child {
+  flex-grow: 1; }
+
+form.add input, form.add button {
+  margin: .5em;
+  padding: .25em;
+  font-size: 1.2em;
+  border-radius: 5px; }
+form.add input[type="color"] {
+  padding: 0;
+  height: +2em; }
+form.add button {
+  background-color: green;
+  color: white;
+  border: none; }
