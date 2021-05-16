@@ -1,16 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import configureStore from "./stores";
-import App from "./components/App";
-import {Provider} from "react-redux";
-import "./index.css";
-
-
-const store = configureStore()
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { factoryCreateStore } from './crud/stores'
+import { Provider } from 'react-redux'
+import './css/app.css'
+import './css/fontawesome.min.css'
+import { Routes } from './routes'
+import { HashRouter } from 'react-router-dom'
+import { USERS_PATH } from './models/users'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
+   <Provider store={factoryCreateStore([USERS_PATH])}>
+      <HashRouter>
+         <Routes />
+      </HashRouter>
+   </Provider>,
+   document.getElementById('root')
+)

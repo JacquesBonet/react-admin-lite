@@ -3,26 +3,53 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "jest": "^18.1.0",
-    "jest-cli": "^18.1.0",
-    "react-addons-test-utils": "^15.4.1",
-    "react-scripts": "0.8.4",
-    "react-test-renderer": "^15.4.2"
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/jest": "^26.0.16",
+    "@types/meteor": "^1.4.49",
+    "@types/node": "^15.3.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-meteor": "^7.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "react-test-renderer": "^17.0.2"
   },
   "dependencies": {
+    "bootstrap": "^5.0.1",
     "express": "^4.14.0",
-    "json-server": "^0.12.1",
+    "inflection": "^1.13.1",
+    "json-server": "^0.16.3",
     "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.1",
-    "redux": "^3.6.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.6.0",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "^4.0.3",
+    "redux": "^4.1.0"
   },
   "scripts": {
     "start": "npm run build & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "server": "json-server --port 3001 db.json"
+    "server": "json-server --port 3001 db.json",
+    "lint": "npx eslint --fix ./src",
+    "prettier": "npx prettier --write ."
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
