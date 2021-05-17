@@ -2,77 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5338d1c6-828c-44f5-a24e-d42dcd7c2515" name="Default Changelist" comment="Big update&#10;Just a path and a schema to describe for each resource to manage">
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/brand/dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/brand/light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/inheart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/actions/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/components/docs/AddOrUpdate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/components/docs/Doc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/components/docs/Docs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/components/docs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/connectors/doConnect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/connectors/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/constants/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/middlewares/Fetch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/middlewares/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/middlewares/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/reducers/docs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/reducers/factoryCombineReducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/reducers/factoryReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/reducers/reducer.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/stores/factoryCreateStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crud/stores/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/users/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/users/path.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/users/schema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/users/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/actions/docs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Add.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Item.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/host.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/connectors/Users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/constants/docs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/path.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/constants/path.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formatCurrency.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crud/components/docs/Docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/components/docs/Docs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crud/reducers/reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/reducers/reducer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/Fetch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/__snapshots__/users.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/docs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/users.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typesdef/proptypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/match.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/utils/match.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/users/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/users/path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/users/schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,13 +30,11 @@
     <setting file="file://$PROJECT_DIR$/src/models/users/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/crud/reducers/reducer.test.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/css/app.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/models/users/schema.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/routes.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/crud/connectors/doConnect.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/pages/users/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.eslintrc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/models/users/path.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/crud/actions/docs.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/crud/reducers/factoryReducer.js" root0="FORCE_HIGHLIGHTING" />
@@ -108,13 +50,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/crud/components/docs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -138,6 +81,23 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="reducer.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/crud/reducers/reducer.test.js" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.reducer.test.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -151,8 +111,18 @@
       <workItem from="1620353998192" duration="29425000" />
       <workItem from="1621049471039" duration="54000" />
       <workItem from="1621049588695" duration="1562000" />
-      <workItem from="1621052055313" duration="22437000" />
+      <workItem from="1621052055313" duration="23808000" />
+      <workItem from="1621170663374" duration="818000" />
+      <workItem from="1621236562268" duration="8748000" />
     </task>
+    <task id="LOCAL-00001" summary="Big update&#10;Just a path and a schema to describe for each resource to manage">
+      <created>1621138282534</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621138282534</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,11 +131,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="3c691487-a6df-4d27-907c-72dd90bc51bf">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="3c691487-a6df-4d27-907c-72dd90bc51bf" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -184,8 +184,14 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/users/index.js</url>
-          <properties lambdaOrdinal="-1" />
+          <line>1</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/crud/reducers/reducer.test.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

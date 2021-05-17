@@ -1,5 +1,5 @@
-import { createSuccess } from '../actions/docs'
-import { USERS_PATH } from '../../models/users'
+import { createSuccess, delSuccess, updateSuccess } from '../actions/docs'
+import { path as USERS_PATH } from '../../models/users'
 import { factoryReducer } from './factoryReducer'
 
 describe('reducer', function () {
@@ -7,7 +7,7 @@ describe('reducer', function () {
       let initialState
 
       beforeEach(function () {
-         initialState = factoryReducer(undefined, [])
+         initialState = factoryReducer(USERS_PATH)(undefined, {})
       })
 
       it('should have an empty users array', function () {
@@ -15,16 +15,31 @@ describe('reducer', function () {
       })
    })
 
-   describe('ADD_USERS_SUCCESS', function () {
+   describe('CRUD actions', function () {
       let state = { isLoading: false, payload: [] }
-      const user = { path: USERS_PATH, nom: 'Bonet', prenom: 'Jacques' }
+      const user = { id: 1, nom: 'Bonet', prenom: 'Jacques' }
+      let reducer = null
 
-      beforeEach(function () {})
+      beforeAll(function () {
+         reducer = factoryReducer(USERS_PATH)
+      })
 
-      it('adds the user code to the array', function () {
+      it('adds the user to the store', function () {
          const action = createSuccess(USERS_PATH, user)
-         state = factoryReducer(state, action)
-         expect(state[0]).toMatchSnapshot()
+         const newState = reducer(state, action)
+         expect(newState.payload[0]).toEqual(user)
+      })
+
+      it('update the user to the store', function () {
+         const action = delSuccess(USERS_PATH, { id: 1 })
+         const newState = reducer(state, action)
+         expect(newState.payload).toEqual([])
+      })
+
+      it('remove the user the store', function () {
+         const action = updateSuccess(USERS_PATH, { ...user, nom: 'Bonet2' })
+         const newState = reducer(state, action)
+         expect(newState.payload[0]).toEqual({ ...user, nom: 'Bonet2' })
       })
    })
 })

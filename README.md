@@ -12,7 +12,7 @@ Little react/redux project to show crud behavior
 
 # run
 
-* launch crud server
+* launch db server
 
 `npm run server`
 
@@ -22,125 +22,62 @@ Little react/redux project to show crud behavior
 
 # what is interesting in this project
 
-## redux state management
+## redux management
 
-CRUD operation is very easy.
+CRUD operations are very easy.
 
 ### redux action
 
-To persist a kind of object, User for example, the developer has to define a path corresponding to the REST endpoint, here 'users,'
-and write only 4 functions, each function is one line of code
-
+To manage an object (create, list, update, delete), User object for example, the developer has to define:
+* a path ('users')
 ```
-const createUser = (user) => (create(USERS_PATH, user));
-const readUsers = () => (read(USERS_PATH));
-const updateUser = (user) => (update(USERS_PATH, user));
-const deleteUser = (user) => (del(USERS_PATH, user));
+export const path = 'users'
 ```
-
-### redux reducer
-
-The reducer is very easy too write too. For User 
-
+* a schema listing all the fields which must be persisted
 ```
-export const usersReducer = (state = initialState, action) => (
-  crudReducer(state, [USERS_PATH], action)
+export const schema = [
+{ field: 'firstName', type: 'text', required: true },
+{ field: 'lastName', type: 'text', required: true },
+{ field: 'age', type: 'number', required: false },
+{ field: 'dateOfBirth', type: 'date', required: false },
+]
+```
+* update the route in adding the object path in the list of routes
+```
+export const routes = [`/home`, `/users`]
+```
+* bind the object to redux
+  * create a `directory` under pages directory
+  * create a `index.js` file under `pages\users` directory
+  * write this export inside the index file (its the redux connect)
+```jsx
+export default doConnect('users', schema)(Docs)
+```
+  * declare the store in adding the resource path (`user` for example) in the factoryCreateStore function defined on 
+the redux Provider
+```jsx
+ReactDOM.render(
+   <Provider store={factoryCreateStore(['user'])}>
+      <HashRouter>
+         <Routes />
+      </HashRouter>
+   </Provider>,
+   document.getElementById('root')
 )
 ```
 
-where initialState is:
 
-```jsx
-`const initialState = {
-  isLoading: false,
-  payload: [],
-}
-
-### how components take actions and state?
-```
-by props.
-Here User component
-
-```jsx
-export const Users = ({users, createUser, deleteUser, updateUser}) => {
-```
-
-There props are build by this function
-
-```jsx
-export default doConnect(USERS_PATH, actions)(Users);
-```
-
-Far more easier than to call mapStateToProps, mapDispatchToProps and bindActionCreators
+In doing that, This permit to have automatically the CRUD operations of a resource in the web application.
 
 
-The doConnect read also the data for the component using the first action passed in parameter.
-
-
-## Schema
-
-We use a schema for the User object.
-
-
-```jsx
-export const schema = [
-  {field: 'firstName', type: 'text', required: true},
-  {field: 'lastName', type: 'text', required: true},
-  {field: 'age', type: 'number', required: false},
-  {field: 'dateOfBirth', type: 'date', required: false}
-]
-```
-
-This permit to build automatically the forms and list of values
-Example for the create and update form:
-
-```jsx
-         <tr>
-            {
-              schema.map(({field, type, required}, idx) =>
-                <td key={idx}>
-                  <input
-                    {...register(field)}
-                    type={type}
-                    placeholder={inflection.transform(field, ['tableize', 'titleize'])}
-                    required={required}
-                    defaultValue={user ? user[field] : ''}
-                  />
-                </td>
-              )
-            }
-```
-
-
-## router
-
-The js class is load when the page is call.
-
-```jsx
-export const Routes = () => (
-  <>
-    <Navbar/>
-    <main className="content">
-      <Switch>
-        <Suspense fallback={<div>Loading...</div>}>
-          {routes.map(path => (
-            <Route key={path} exact path={path} render={props => (
-              React.createElement(React.lazy(() => import(`./pages${path}`)), props)
-            )}/>
-          ))}
-        </Suspense>
-        <Redirect to={'/home'}/>
-      </Switch>
-    </main>
-  </>
-);
-```
 
 ## Deploymeent
 
 I didn't have time to works on the deploymeent
 
-The best thing to do is embed the database on express to facilitae deploymeent
+The best thing to do is embed the database on express to facilitate deployment
+Another solution deploy on the cloud like heroku.
+Fo local deployment build a docker container.
 
 
 ## tests

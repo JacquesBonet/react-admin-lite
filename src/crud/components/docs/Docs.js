@@ -18,6 +18,7 @@ export const Docs = ({ docs, create, del, update, schema, path }) => {
                         {inflection.transform(field, ['tableize', 'titleize'])}
                      </th>
                   ))}
+                  <th key="remove" className="border-bottom"></th>
                </tr>
             </thead>
             <tbody>

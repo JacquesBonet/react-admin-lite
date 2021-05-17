@@ -6,7 +6,7 @@ import './css/app.css'
 import './css/fontawesome.min.css'
 import { Routes } from './routes'
 import { HashRouter } from 'react-router-dom'
-import { USERS_PATH } from './models/users'
+import { path as USERS_PATH } from './models/users'
 
 ReactDOM.render(
    <Provider store={factoryCreateStore([USERS_PATH])}>
