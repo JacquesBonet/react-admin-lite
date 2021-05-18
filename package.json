@@ -43,7 +43,7 @@
     "build": "react-scripts build",
     "test:ut": "react-scripts test --env=jsdom",
     "test:codegen": "npx playwright codegen http://localhost:3000",
-    "server:db": "json-server --port 3001 db.json",
+    "start:db": "json-server --port 3001 db.json",
     "lint": "npx eslint --fix ./src",
     "prettier": "npx prettier --write .",
     "dev": "concurrently -k \"BROWSER=none npm start\" \"npm:electron\""

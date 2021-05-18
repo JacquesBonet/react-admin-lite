@@ -1,4 +1,18 @@
 {
+  "countries": [
+    {
+      "name": "France",
+      "superficie": "550000",
+      "population": "67",
+      "id": 1
+    },
+    {
+      "name": "Espagne",
+      "superficie": "490000",
+      "population": "50",
+      "id": 2
+    }
+  ],
   "products": [
     {
       "name": "ddd",

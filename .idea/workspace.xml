@@ -4,21 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5338d1c6-828c-44f5-a24e-d42dcd7c2515" name="Default Changelist" comment="add unit test&#10;update readme&#10;wording">
-      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+    <list default="true" id="5338d1c6-828c-44f5-a24e-d42dcd7c2515" name="Default Changelist" comment="refacto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/users/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +32,6 @@
     <setting file="file://$PROJECT_DIR$/src/crud/reducers/factoryReducer.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/crud/actions/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1s9raage1D6tz46xl2ponPSjNFD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,7 +42,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,11 +60,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/helpers" />
       <recent name="$PROJECT_DIR$/src/models" />
       <recent name="$PROJECT_DIR$/src/pages/products" />
       <recent name="$PROJECT_DIR$/src/crud/components/docs" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages" />
@@ -120,7 +107,9 @@
       <workItem from="1621052055313" duration="23808000" />
       <workItem from="1621170663374" duration="818000" />
       <workItem from="1621236562268" duration="21528000" />
-      <workItem from="1621314833037" duration="640000" />
+      <workItem from="1621314833037" duration="786000" />
+      <workItem from="1621315721523" duration="73000" />
+      <workItem from="1621315810580" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="Big update&#10;Just a path and a schema to describe for each resource to manage">
       <created>1621138282534</created>
@@ -136,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621246193451</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refacto">
+      <created>1621315547665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621315547665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +183,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Big update&#10;Just a path and a schema to describe for each resource to manage" />
     <MESSAGE value="add unit test&#10;update readme&#10;wording" />
-    <option name="LAST_COMMIT_MESSAGE" value="add unit test&#10;update readme&#10;wording" />
+    <MESSAGE value="refacto" />
+    <option name="LAST_COMMIT_MESSAGE" value="refacto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
