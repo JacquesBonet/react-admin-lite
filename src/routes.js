@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
-import { routes } from './pages/routes'
 import { Navbar } from './components/navbar'
+import { resourcesName } from './pages'
 
 export const Routes = () => (
    <>
@@ -9,14 +9,14 @@ export const Routes = () => (
       <main className="content">
          <Switch>
             <Suspense fallback={<div>Loading...</div>}>
-               {routes.map(path => (
+               {resourcesName.map(path => (
                   <Route
                      key={path}
                      exact
-                     path={path}
+                     path={`/${path}`}
                      render={props =>
                         React.createElement(
-                           React.lazy(() => import(`./pages${path}`)),
+                           React.lazy(() => import(`./pages/${path}`)),
                            props
                         )
                      }

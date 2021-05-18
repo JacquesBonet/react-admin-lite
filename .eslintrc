@@ -12,6 +12,7 @@
     // Use our .prettierrc file as source
     "no-unused-expressions": "off",
     "no-throw-literal": "warn",
-    "array-callback-return": "off"
+    "array-callback-return": "off",
+    "no-use-before-define": "off"
   }
 }

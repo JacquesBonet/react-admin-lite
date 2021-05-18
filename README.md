@@ -14,7 +14,7 @@ Little react/redux project to show crud behavior
 
 * launch db server
 
-`npm run server`
+`npm run start:db`
 
 * launch webserver
 
@@ -22,53 +22,27 @@ Little react/redux project to show crud behavior
 
 # what is interesting in this project
 
-## redux management
+There is very little things to do to have an admin like web application permitting to read, create, delete, update
+objects store in a database 
 
-CRUD operations are very easy.
+## steps to do
 
-### redux action
+* define a path representing the resource endpoint
+* define a schema describing the object fields
+* export a connector permitting to read the data, display it and manage it
 
-To manage an object (create, list, update, delete), User object for example, the developer has to define:
-* a path ('users')
-```
+For the Users object, we have to write
+
+```jsx
 export const path = 'users'
-```
-* a schema listing all the fields which must be persisted
-```
 export const schema = [
-{ field: 'firstName', type: 'text', required: true },
-{ field: 'lastName', type: 'text', required: true },
-{ field: 'age', type: 'number', required: false },
-{ field: 'dateOfBirth', type: 'date', required: false },
+   { field: 'firstName', type: 'text', required: true },
+   { field: 'lastName', type: 'text', required: true },
+   { field: 'age', type: 'number', required: false },
+   { field: 'dateOfBirth', type: 'date', required: false },
 ]
+export default doConnect(path, schema)(Docs)
 ```
-* update the route in adding the object path in the list of routes
-```
-export const routes = [`/home`, `/users`]
-```
-* bind the object to redux
-  * create a `directory` under pages directory
-  * create a `index.js` file under `pages\users` directory
-  * write this export inside the index file (its the redux connect)
-```jsx
-export default doConnect('users', schema)(Docs)
-```
-  * declare the store in adding the resource path (`user` for example) in the factoryCreateStore function defined on 
-the redux Provider
-```jsx
-ReactDOM.render(
-   <Provider store={factoryCreateStore(['user'])}>
-      <HashRouter>
-         <Routes />
-      </HashRouter>
-   </Provider>,
-   document.getElementById('root')
-)
-```
-
-
-In doing that, This permit to have automatically the CRUD operations of a resource in the web application.
-
 
 
 ## Deploymeent

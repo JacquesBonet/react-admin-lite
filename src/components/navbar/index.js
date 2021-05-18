@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { routes } from '../../pages/routes'
 import logo from '../../assets/img/inheart.png'
 import { useDispatch } from 'react-redux'
 import { search } from '../../crud/actions/search'
+import { resourcesName } from '../../pages'
 
 export const Navbar = () => {
    const { pathname } = useLocation()
@@ -18,10 +18,10 @@ export const Navbar = () => {
          <div className="container-fluid">
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                <ul className="navbar-nav">
-                  {routes.map(path => (
+                  {resourcesName.map(path => (
                      <li key={path} className="nav-item">
-                        <Link className={`nav-link ${pathname === path && 'nav-active'}`} to={path}>
-                           {path.toUpperCase().slice(1)}
+                        <Link className={`nav-link ${pathname === path && 'nav-active'}`} to={`/${path}`}>
+                           {path.toUpperCase()}
                         </Link>
                      </li>
                   ))}
