@@ -1,5 +1,5 @@
-# crud-user
-Little react/redux project to show crud behavior
+# react-admin-lite
+Little react/redux admin project to show crud behavior and how to manage resources with little line of code
 
 # installation
 
@@ -25,13 +25,14 @@ Little react/redux project to show crud behavior
 There is very little things to do to have an admin like web application permitting to read, create, delete, update
 objects store in a database 
 
-## steps to do
+## steps to do for managing a REST resource
 
 * define a path representing the resource endpoint
-* define a schema describing the object fields
-* export a connector permitting to read the data, display it and manage it
+* define a schema describing the fields of the resource
+* export a connector permitting to inject the data, display it and create, update, delete, search
 
-For the Users object, we have to write
+Take one example:
+For the Users object, we have just to write
 
 ```jsx
 export const path = 'users'
@@ -43,43 +44,14 @@ export const schema = [
 ]
 export default doConnect(path, schema)(Docs)
 ```
+The code must be put under a subfolder of the `pages` directory. The subfolder name is the name of the resource.
+
+Ex: `pages/users`
 
 
-## Deploymeent
+# project architecture
 
-I didn't have time to works on the deploymeent
-
-The best thing to do is embed the database on express to facilitate deployment
-Another solution deploy on the cloud like heroku.
-Fo local deployment build a docker container.
-
-
-## tests
-
-didn't have time to execute
-
-
-## What is unit test
-
-The role of unit test is:
-- test a component using all the values possible in input.
-- disturb the output to throw error like network, memory, screen resolution, etc
-
-
-Some guys think unit test like a black box and use mock to substitute the sublayer.
-I don't agrea totally with this approach. 
-I prefer to use proxy or stub like a fake server than mocking the call to the server
+The `crud` directory contains the admin framework of the application. We find some redux codes and UX.
 
 
 
-
-### To finish
-
-Many others things to say but I must stop.
-
-
-Thks for the exercice.
-
-
-
-Jacques
