@@ -39,6 +39,7 @@
     "redux": "^4.1.0"
   },
   "scripts": {
+    'prestart": "npm run start:db",
     "start": "npm run build & react-scripts start",
     "build": "react-scripts build",
     "test:ut": "react-scripts test --env=jsdom",
