@@ -15,18 +15,18 @@
   ],
   "products": [
     {
-      "name": "ddd",
-      "date": "2021-04-28",
-      "manufacturer": "OOOO",
-      "quantity": "12",
-      "id": 1
-    },
-    {
       "name": "Velo",
       "date": "2021-05-13",
       "manufacturer": "BMC",
-      "quantity": "12",
+      "quantity": "13",
       "id": 2
+    },
+    {
+      "name": "ggg",
+      "date": "2021-05-25",
+      "manufacturer": "Peugeot",
+      "quantity": "12",
+      "id": 3
     }
   ],
   "users": [
