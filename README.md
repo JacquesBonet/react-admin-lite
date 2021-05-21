@@ -1,5 +1,5 @@
 # react-admin-lite
-Little react/redux admin project to show crud behavior and how to manage resources with little line of code
+React/redux admin project to show crud behavior and how to manage resources with little lines of code
 
 # installation
 
@@ -48,10 +48,23 @@ The code must be put under a subfolder of the `pages` directory. The subfolder n
 
 Ex: `pages/users`
 
+Of course, if you like a custome behavior, its always possible.
+
 
 # project architecture
 
 The `crud` directory contains the admin framework of the application. We find some redux codes and UX.
+The actions and reducers works with any REST resources.
+
+We use redux middleware for the fetch and the search.
+
+The router take the path of the resources to build the routing engin.
+
+The UX use Bootstrap 5 directly without react layer. That can be change very easly.
+
+The forms use react-hook-form. 
+
+
 
 
 
