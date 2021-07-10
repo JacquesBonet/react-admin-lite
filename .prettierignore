@@ -8,6 +8,7 @@ doc/
 docker/
 kubernetes/
 migration-replicaSet/
+/src/css/app.css
 
 
 
